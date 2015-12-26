@@ -1,0 +1,22 @@
+# Core
+
+spring:
+  # The name of the application
+  application.name: InventoryApplicationTest1
+
+ntisserver:
+   address:  http://localhost:9292/ntis
+   
+inventoryclient:
+   name: inventoryclient1
+   location : HeadQuarters
+   
+inventoryserver:
+   locations: HeadQuarters,DataCenter3
+   address: http://localhost:9191/inventory/service,http://localhost:9292/inventory/service
+
+kafka:
+  brokerlist: 192.168.200.103:9092,192.168.200.103:9094
+  
+server:
+  port: 9090

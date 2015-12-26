@@ -1,0 +1,8 @@
+# Core
+
+spring:
+  # The name of the application
+  application.name: NtisServer
+
+kafka:
+  brokerlist: broker1:9092,broker2:9092

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.ntis.org/schema"
+	xmlns:tns="http://www.ntis.org/schema" elementFormDefault="qualified">
+
+	<simpleType name="LocationType">
+		<restriction base="string"></restriction>
+	</simpleType>
+	<element name="location" type="tns:LocationType"></element>
+
+
+	<element name="LocationProximity" type="tns:LocationProximityType">
+	</element>
+
+	<complexType name="LocationProximityType">
+		<sequence>
+			<element name="location" type="tns:LocationType" maxOccurs="1"
+				minOccurs="1">
+			</element>
+			<element name="proximity" type="tns:ProximityType" maxOccurs="1"
+				minOccurs="1"></element>
+		</sequence>
+	</complexType>
+
+	<simpleType name="ProximityType">
+		<restriction base="long"></restriction>
+	</simpleType>
+
+	<complexType name="ServiceLocationType">
+		<sequence>
+			<element name="site" type="tns:LocationType" maxOccurs="unbounded" minOccurs="0"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="locationProximityDataType">
+		<sequence>
+			<element name="locationProximity" type="tns:LocationProximityType"
+				maxOccurs="unbounded" minOccurs="0">
+			</element>
+		</sequence>
+	</complexType>
+
+
+	
+	<element name="getProximityList">
+		<complexType>
+			<sequence>
+				<element name="servicelocation" type="tns:ServiceLocationType"
+					maxOccurs="1" minOccurs="1" />
+				<element name="clientlocation" type="tns:LocationType"
+					maxOccurs="1" minOccurs="1">
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+	<element name="getProximityListResponse">
+		<complexType>
+			<sequence>
+				<element name="locationProximityData" type="tns:locationProximityDataType" />
+			</sequence>
+		</complexType>
+	</element>
+</schema>

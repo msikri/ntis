@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.ntis.org/inventory"
+	xmlns:tns="http://www.ntis.org/inventory" elementFormDefault="qualified">
+
+	<element name="InventoryIds" >
+	<complexType >
+		<sequence>
+			<element name="skuids" type="long" maxOccurs="unbounded"
+				minOccurs="1">
+			</element>
+		</sequence>
+	</complexType>
+	</element>
+
+	<element name="InventoryList">
+		<complexType>
+			<sequence>
+				<element name="inventory" type="tns:InventoryType" maxOccurs="unbounded"
+					minOccurs="1">
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+
+	<complexType name="InventoryType">
+		<sequence>
+			<element name="name" type="string"></element>
+			<element name="price" type="float"></element>
+			<element name="status" type="tns:InventoryStatusType"></element>
+		</sequence>
+	</complexType>
+
+	<simpleType name="InventoryStatusType">
+		<restriction base="string">
+			<enumeration value="InStock" />
+			<enumeration value="OutOfStock" />
+			<enumeration value="BackOrderable" />
+			<enumeration value="PreOrderable" />
+			<enumeration value="Unavailable" />
+		</restriction>
+	</simpleType>
+</schema>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jaxws="http://cxf.apache.org/jaxws"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
+
+	<bean id="product1" class="com.service.inventory.dao.Product">
+		<property name="skuid" value="1" />
+		<property name="name" value="Product1" />
+		<property name="description" value="Des for Product1" />
+		<property name="status" value="IN_STOCK" />
+		<property name="price" value="10" />
+	</bean>
+
+	<bean id="product2" class="com.service.inventory.dao.Product">
+		<property name="skuid" value="12345" />
+		<property name="name" value="Product2" />
+		<property name="description" value="Des for Product2" />
+		<property name="status" value="IN_STOCK" />
+		<property name="price" value="14" />
+	</bean>
+
+	
+</beans>

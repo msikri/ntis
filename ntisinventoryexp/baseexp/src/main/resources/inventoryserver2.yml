@@ -1,0 +1,11 @@
+# Core
+
+spring:
+  # The name of the application
+  application.name: InventoryServer2
+ 
+kafka:
+  brokerlist: 192.168.200.103:9092,192.168.200.103:9094
+  
+server:
+  port: 8181

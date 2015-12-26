@@ -1,0 +1,5 @@
+# Core
+
+spring:
+  # The name of the application
+  application.name: BaseApplication

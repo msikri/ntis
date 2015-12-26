@@ -1,0 +1,8 @@
+<getProximityListResponse xmlns="http://www.ntis.org/schema">
+	<locationProximityData>
+		<locationProximity>
+			<location>DataCenter1</location>
+			<proximity>0</proximity>
+		</locationProximity>
+	</locationProximityData>
+</getProximityListResponse>

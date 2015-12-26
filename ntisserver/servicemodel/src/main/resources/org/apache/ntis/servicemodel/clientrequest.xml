@@ -1,0 +1,6 @@
+<ntis:getProximityList xmlns:ntis="http://www.ntis.org/schema">
+	<ntis:servicelocation>
+		<ntis:site>DataCenter1</ntis:site>
+	</ntis:servicelocation>
+	<ntis:clientlocation>DataCenter1</ntis:clientlocation>
+</ntis:getProximityList>

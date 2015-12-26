@@ -1,0 +1,12 @@
+# Core
+
+spring:
+  # The name of the application
+  application.name: InventoryApplicationTest1
+  inventoryservice.name: inventoryserviceL2
+
+inventoryclient:
+  name: inventoryclient1
+
+kafka:
+  brokerlist: broker1:9092,broker2:9092

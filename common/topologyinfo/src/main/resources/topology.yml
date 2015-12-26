@@ -1,0 +1,11 @@
+
+
+topologysources:
+ - inventoryclient1:
+    HeadQuarters: 1000
+    DataCenter3: 2000
+ - inventoryclient2:
+      inventoryserviceL1: 1000
+      inventoryserviceL3: 3000
+ - mockclient:
+      mockserver: 0
