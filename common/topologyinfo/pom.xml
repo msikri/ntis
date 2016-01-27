@@ -37,10 +37,5 @@
 			<groupId>org.yaml</groupId>
 			<artifactId>snakeyaml</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.apache.ntis</groupId>
-			<artifactId>topologyinfo</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
 	</dependencies>
 </project>
